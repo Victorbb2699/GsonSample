@@ -15,11 +15,11 @@ public class main {
 		
 		System.out.println("Introduce una persona.");
 		System.out.println("Nombre:  ");
-		p.nombre = entrada.nextLine();
+		p.setNombre(entrada.nextLine());
 		System.out.println("Apellidos:  ");
-		p.apellidos = entrada.nextLine();
+		p.setApellidos(entrada.nextLine()); 
 		System.out.println("Edad:  ");
-		p.edad = entrada.nextInt();
+		p.setEdad(entrada.nextInt());
 		
 		Gson gson = new GsonBuilder().setPrettyPrinting().create();
 		String json = gson.toJson(p);
